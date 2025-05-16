@@ -10,7 +10,7 @@ def strict(func: FunctionType) -> Callable[..., Any]:
         if len(args) > len(param_names):
             raise TypeError(f"Only {len(param_names)} positional arguments are allowed, got {len(args)}.")
         params_with_names: Dict[str, Any] = dict(zip(param_names, args))
-        extra_kwargs: set[str] = set(kwargs) & set(params_with_names)
+        extra_kwargs: list[str] = sorted(set(kwargs) & set(params_with_names))
         if extra_kwargs:
             raise TypeError(f"Argument(s) passed both positionally and by keyword: {', '.join(extra_kwargs)}.")
         params_with_names.update(kwargs)

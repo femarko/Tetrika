@@ -7,6 +7,6 @@
 - К каждой задаче необходимо написать тесты  
 # Удачи!
 
-[Задача 1](tetrika-junior/task1/task1.md)   
-[Задача 2](tetrika-junior/task2/task2.md)  
-[Задача 3](tetrika-junior/task3/task3.md)
+[Задача 1](tetrika_junior/task1/task1.md)   
+[Задача 2](tetrika_junior/task2/task2.md)  
+[Задача 3](tetrika_junior/task3/task3.md)
